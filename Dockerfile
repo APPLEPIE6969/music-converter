@@ -1,6 +1,6 @@
 FROM python:3.9-slim
 
-# Install FFmpeg (Required for audio conversion)
+# Install FFmpeg and basic system tools
 RUN apt-get update && \
     apt-get install -y ffmpeg && \
     rm -rf /var/lib/apt/lists/*
